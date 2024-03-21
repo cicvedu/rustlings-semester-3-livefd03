@@ -15,7 +15,7 @@ fn main() {
         timestamp
     );
     std::env::set_var("TEST_FOO",timestamp.to_string());
-    println!("cargo:{};", your_command);
+    println!("cargo:{}", your_command);
 
     // In tests8, we should enable "pass" feature to make the
     // testcase return early. Fill in the command to tell
