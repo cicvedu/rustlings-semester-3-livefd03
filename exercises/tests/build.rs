@@ -14,7 +14,8 @@ fn main() {
         "rustc-env=TEST_FOO={}",
         timestamp
     );
-    print!("cargo:{};", your_command);
+    std::env::set_var("TEST_FOO",timestamp.to_string());
+    println!("cargo:{};", your_command);
 
     // In tests8, we should enable "pass" feature to make the
     // testcase return early. Fill in the command to tell

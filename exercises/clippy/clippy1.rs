@@ -11,10 +11,10 @@
 
 
 
-use std::f32::{self,consts};
+use std::f32;
 
 fn main() {
-    let pi = consts::PI;
+    let pi = f32::consts::PI;
     let radius = 5.00f32;
 
     let area = pi * f32::powi(radius, 2);
